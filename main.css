@@ -1,0 +1,481 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(0, 34, 68);
+  
+   
+}
+/*HEADERRRRRRRR */
+
+Header {
+    position: relative;
+    background-color: #0a687d;
+    height: 100px;
+    color: #C0C0C0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: changeColor 5s linear infinite;
+}
+
+/*---------------- */
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust the margin for spacing */
+}
+
+.logo-text {
+    font-size: 60px; /* Adjust the font size */
+    color: #C0C0C0;
+}
+/*------------------------------*/
+
+
+/* Add this style for the search bar */
+.search-bar {
+    margin-left: 50px; /* Push the search bar to the right */
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust the margin as needed */
+    width: 400px;
+    height: 40px;
+    border-radius: 20px; /* Make the edges curved */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px; /* Match the container's border-radius */
+    width: 100%;
+    outline: none; /* Remove the default input focus outline */
+}
+
+/*----------------------------------*/
+/* Common styles for sub-menus */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #C0C0C0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Sub-menu styles */
+.sub-menu ul {
+    display: none;
+    position: absolute;
+    background-color: #0a687d;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.sub-menu ul li {
+    margin: 10px 0;
+}
+
+.sub-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */
+    transition: color 0.3s ease;
+}
+
+.sub-menu ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Display sub-menu on hover */
+nav li.sub-menu:hover ul {
+    display: block;
+}
+
+/* Drama Sub-menu styles */
+.sub-menu-drama {
+    position: relative;
+}
+
+.sub-menu-drama .sublist {
+    display: none;
+    position: absolute;
+    background-color: #0a687d;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+    left: 100%; /* Position to the right of the parent */
+    top: 0;
+}
+
+.sub-menu-drama .sublist li {
+    margin: 10px 0;
+}
+
+.sub-menu-drama .sublist a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */
+    transition: color 0.3s ease;
+}
+
+.sub-menu-drama .sublist a:hover {
+    color: #00bcd4;
+}
+
+/* Display Drama sublist on hover */
+nav li.sub-menu-drama:hover .sublist {
+    display: block;
+}
+
+/*==========================================================*/
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+
+
+/*-----------------------------------------------------------*/
+@keyframes moveHeader {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.side-header {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #C0C0C0;
+    animation: moveHeader 7s linear infinite; /* Adjust the duration as needed */
+}
+
+/*---------------MAIN ---------------*/
+.movie-slider-container {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.movie-set {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    flex: 0 0 calc(20% - 20px); /* 20% width with 20px margin */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.movie img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.watchlist-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.movie-name {
+    margin-top: 5px;
+}
+
+/* Optional: Hover effect on the movie */
+.movie:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+/*--------------------------------footer--------------------------------------------------*/
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #3498db;
+}
+/*------------------------------Heat.html-------------------------------------*/
+.Heat-Video main {
+    text-align: center; /* Center the video and other elements */
+    margin-top: 20px; /* Add some spacing at the top */
+}
+
+video {
+    width: 100%; /* Make the video fill the container width */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the video within its container */
+    display: block; /* Remove default inline display */
+    border: 1px solid #fff; /* Add a border for better visibility */
+}
+
+/* Add styles for the title and description */
+main h1 {
+    color:rgb(79, 152, 181);
+    
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    
+}
+
+aside {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    border-radius: 10px; /* Add rounded corners */
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:rgb(79, 152, 181)
+}
+
+/* Add styles for the rating and button */
+div {
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Customize the appearance of the "Add to Watchlist" button */
+button#addToWatchlistBtn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#addToWatchlistBtn:hover {
+    background-color: #0056b3;
+}
+/*----------------------------------SignIn.html-------------------------*/
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.signin-box {
+    background-color: #0a687d;
+    color: #ecf0f1;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button#return-button {
+    background-color: #e74c3c;
+}
+
+button#return-button:hover {
+    background-color: #c0392b;
+}
+
+button#submit-button {
+    background-color: #2ecc71;
+}
+
+button#submit-button:hover {
+    background-color: #27ae60;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*---------------------------------First.html--------------*/
+.centered-article {
+    color: rgb(248, 248, 248);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    text-align: center;
+     /* Increased padding for more space */
+    background-color:rgb(0, 34, 68);
+     /* Adjusted border-radius for a more rounded look */
+    /* Adjusted margin for more space */
+    width: 100%; /* Adjusted width to make it responsive */
+   /* Set a maximum width for larger screens */
+    position: relative; /* Added position relative for absolute positioning of filmstrips */
+}
+
+.filmstrip-top,
+.filmstrip-bottom {
+    width: 100%; /* Adjusted width to make the filmstrip smaller */
+    height:200px
+
+     /* Center the filmstrip horizontally */
+   
+}
+
+.filmstrip-top {
+    top: 0; /* Stick to the top of the container */
+}
+
+.filmstrip-bottom {
+    bottom: 0; /* Stick to the bottom of the container */
+}
+
+
+.faq {
+    text-align: left;
+}
+
+.faq-container {
+    color: #C0C0C0;
+    padding: 40px; /* Increased padding for more space */
+    border-radius: 10px;
+    color: #ecf0f1;
+    margin-bottom: 50px; /* Adjusted margin for more space */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: auto; /* Center the container */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 50px; /* Adjusted margin for more space */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #c0392b;
+    color: #fcfcfc;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0066cc;
+}
+
+.question {
+    cursor: pointer;
+    padding: 20px; /* Increased padding for more space */
+    background-color: rgb(0, 34, 68);
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Adjusted margin for more space */
+    font-size: 20px; /* Adjusted font size */
+}
+
+.answer {
+    display: none;
+    padding: 20px; /* Increased padding for more space */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: rgb(0, 34, 68);
+    font-size: 18px; /* Adjusted font size */
+}
+
+/**/

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="myTvTitle">Comedy Movies</title>
+    <link rel="shortcut icon" type="tv-icon" href="tv.png">
+    <link rel="stylesheet" href="main.css">
+  
+</head>
+<body>
+    <header>
+        <span class="logo-container">
+            <img src="tv2.png" alt="MYTV Logo" class="logo">
+            <span class="logo-text">MY TV</span>
+        </span>
+        <input class="search-bar" type="text" placeholder="Search...">
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="sub-menu"><a href="#">Movies</a>
+                    <ul>
+                        <li><a href="Action.html">Action</a></li>
+                        <li class="sub-menu-drama" onmouseover="showSublist()" onmouseout="hideSublist()">
+                            <a href="#">Drama</a>
+                            <ul class="sublist" id="secondSublist">
+                                <li><a href="Before2000's.html">Before 2000's</a></li>
+                                <li><a href="After2000's.html">After 2000's</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Comedy.html">Comedy</a></li>
+                        <li><a href="Mystery.html">Mystery</a></li>
+                        <li><a href="Horror.html">Horror</a></li>
+                        <li><a href="Sci-fic.html">Sci-fi</a></li>
+                    </ul>
+                </li>
+                <li><a href="Watchlist.html">Watchlist</a></li>
+                <li><a href="Ratings.html">Ratings</a></li>
+                <li><a href="Account.html">Account</a></li>
+                <li><a href="first.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 >Comedy Movies</h1>
+        <div class="movie-slider-container">
+            <div class="movie-slider">
+                <div class="movie-set" id="movieSet1">
+                    <!-- Repeat the structure for each movie in the set -->
+                    <!-- Add your first set of movies here -->
+                </div>
+                <div class="movie-set" id="movieSet2">
+                    <!-- Add your second set of movies here -->
+                </div>
+                <!-- Repeat for additional movie sets as needed -->
+            </div>
+        </div>
+    </main>
+    <footer> 
+
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Questions? Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li> 
+
+                    <label for="mySelect">Select Language : </label>
+                    <select id="mySelect" name="mySelect" dir="fa">
+                        <option value="option1">English </option>
+                        <option value="option2">Arabic</option>
+                        <option value="option3">French</option>
+                    </select>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preference</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+        </div>
+
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

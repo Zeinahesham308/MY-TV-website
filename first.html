@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYTV</title>
+    <link rel="shortcut icon" type="tv-icon" href="tv.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+   
+</head>
+<body>
+    <header>
+        <span class="logo-container">
+            <img src="tv2.png" alt="MYTV Logo" class="logo">
+            <span class="logo-text">MY TV</span>
+        </span>
+        <input   class="search-bar" type="text" placeholder="Search...">
+        <nav>
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li class="sub-menu">
+                    <a href="#">Movies</a>
+                    <ul>
+                        <li><a href="first.html">Action</a></li>
+                        <li><a href="first.html">Comedy</a></li>
+                        <li><a href="first.html">Mystery</a></li>
+                        <li><a href="first.html">Drama</a></li>
+                        <li><a href="first.html">Horror</a></li>
+                        <li><a href="first.html">Sci-fi</a></li>
+                    </ul>
+                </li>
+                <li><a href="first.html">Watchlist</a></li>
+                <li><a href="first.html">Ratings</a></li>
+                <li><a href="first.html">Account</a></li>
+                
+                <li><a href="first.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <article class="centered-article">
+            <!-- Filmstrip above text -->
+            <img src="Filmstrip-PNG-Clipart.png" alt="Film Strip" class="filmstrip-top">
+            <p>
+                Welcome!
+            </p>
+            <p>
+                Discover, Watch, Enjoy - Your Personal Film List!
+            </p>
+            <article class="button-container">
+                <button class="sign-in-button" onclick="navigateTo('signin.html')">Sign in</button>
+                <button class="sign-up-button" onclick="navigateTo('signup.html')">Sign up</button>
+            </article>
+            <!-- Filmstrip below text -->
+            <img src="Filmstrip-PNG-Clipart.png" alt="Film Strip" class="filmstrip-bottom">
+        </article>
+       
+    
+        
+       
+        <div class="faq-container">
+            <p style="font-size: 40px;">
+                Frequently Asked Questions 
+            </p>
+
+
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer('answer1')">
+                    <p>Q: Who are we?</p>
+                    <div id="answer1" class="answer">
+                        <p>A: We provide a platform that allows you to create a watchlist, rank movies, and see the trending movies.</p>
+                    </div>
+                </div>
+
+                <div class="question" onclick="toggleAnswer('answer2')">
+                    <p>Q: Is this service subscription-based?</p>
+                    <div id="answer2" class="answer">
+                        <p>A: No, it's totally free. You just need to create an account, and that's it.</p>
+                    </div>
+                </div>
+
+                <div class="question" onclick="toggleAnswer('answer3')">
+                    <p>Q: Is there a mobile app?</p>
+                    <div id="answer3" class="answer">
+                        <p>A: We are working on it. Stay tuned for updates!</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <br>
+        <br>
+
+
+   <!-- Additional details, links, and select element under FAQ -->
+        <div class="additional-details">
+            <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p >Links: <a style="color: aliceblue;"href="#">Link 1</a>, <a style="color: aliceblue;" href="#">Link 2</a>, <a style="color: aliceblue;" href="#">Link 3</a></p>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+</main>
+    <footer> 
+
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Questions? Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li> 
+
+                    <label for="mySelect">Select Language : </label>
+                    <select id="mySelect" name="mySelect" dir="fa">
+                        <option value="option1">English </option>
+                        <option value="option2">Arabic</option>
+                        <option value="option3">French</option>
+                    </select>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preference</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+        </div>
+
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
