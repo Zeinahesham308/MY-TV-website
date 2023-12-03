@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
     function displayAlert() {
-        alert('You are making the best decision now by loginin in !');
+        alert('You are making the best decision now by loging in !');
     }
 
 
